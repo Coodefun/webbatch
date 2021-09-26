@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlform</title>
+
+    <style>
+
+        body
+        {
+            background-color: aqua;
+        }
+
+        form
+        {
+            background-color: blue;
+        }
+
+        label{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="Day8_welcome.html" method="GET">
+
+        <div>
+        <label for="fname">First Name</label>
+        <input name="fname" pattern="[A-Z]{2}" id="fname" minlength="6"  type="text" placeholder="Write your first name" required>
+        <br>
+        <br>
+        </div>
+
+        <div>
+        <label for="lname">Last Name</label>
+        <input name="lname" id="lname" type="text" placeholder="Write your LastName" required>
+        <br>
+        <br>
+        </div>
+
+        <div>
+        <label for="pwd">Password</label>
+        <input type="password" placeholder="Minimum 8 letters" minlength="8" maxlength="10" name="pwd" id="pwd">
+        <br>
+        <br>
+    </div>
+
+
+    <div>
+        <label for="phonenumber">Tel:</label>
+        <input type="tel" pattern="[1-9]{1}[0-9]{9}" maxlength="10"  id="phonenumber" name="phonenumber">
+        <br>
+        <br>
+    </div>
+
+
+        <div>
+        <label for="emailid">Email</label>
+        <input type="email" name="emailid" id=emailid">
+        <br>
+        <br>
+    </div>
+      
+
+        <div>
+            <label for="dob" >Date Of Birth</label>
+            <input type="date" name="dob" id="dob">
+            <br>
+            <br>
+        </div>
+
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender">Female
+            <br>
+            <br>
+        </div>
+
+        <div>
+            <label for="fruits">My Favourite Fruit</label>
+            <input type="checkbox" id="Mango">Mango
+            <input type="checkbox" id="Apple">Apple
+            <input type="checkbox" id="Orange" checked>Orange
+            <input type="checkbox" id="Banana">Banana
+
+            <br>
+            <br>
+        </div>
+
+         <div>
+            <label> Select Your Class</label>         
+            <select>
+                <option>Scroll Down</option>
+                <option value="one">1st</option>
+                <option value="two">2nd</option>
+                <option value="three">3rd</option>
+                <option value="Four">4th</option>
+            </select>
+            <br>
+            <br>
+        </div>
+
+        <div>
+            <label for="Query">Please write down your query, we will connect you soon</label>
+            <textarea name="Query" cols="30" rows="5"></textarea>
+        </div>
+
+        <div>
+        <input type="submit" value="Click">
+        </div>
+
+    </form>  
+
+
+
+</body>
+</html>
