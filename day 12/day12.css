@@ -1,0 +1,53 @@
+.item1
+{
+    background-color: yellow;
+    height:100px;
+    width:100px;
+    display:inline-block;
+}
+.item2
+{
+    background-color: green;
+    height:50px;
+    width: 50px;
+    display:inline;
+}
+
+p{
+    background-color: skyblue;
+}
+
+.p1
+{
+    display: inline;
+}
+.p2
+{
+    display:none;
+}
+.item3
+{
+    background-color: rgb(51, 38, 126);
+    height:70px;
+    width:30px;
+}
+.item4
+{
+    background-color: rgb(212, 44, 170);
+    height:40px;
+    width:70px;
+}
+
+.container
+{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rosybrown;
+    /* display:flex; */
+    /* flex-direction:row-reverse; */
+    /* justify-content:flex-start; */
+    /* justify-content: center; */
+    /* align-items:flex-start; */
+    /* flex-wrap:wrap; */
+
+}
