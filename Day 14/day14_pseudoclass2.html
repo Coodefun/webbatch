@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nth-child Pseudo Class Selectors</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: lightgray;
+    }
+
+    .center-container {
+      padding: 20px;
+      background-color: white;
+      width: 700px;
+      margin: auto;
+    }
+   
+
+    #first li:first-child {
+      color: red;
+    }
+
+    #last li:last-child {
+      color: blue;
+    }
+
+    #nthchild li:nth-child(even) {
+      text-decoration: underline;
+    }
+
+    #nthchild li:nth-child(3n) {
+      font-weight: bold;
+    }
+
+    #nthchild li:nth-child(2n + 1) {
+      color: blue;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="center-container">
+    <u>
+      <h2 style="color: red;">
+        :first-child, :last-child & :nth-child Pseudo Class Selectors
+      </h2>
+    </u>
+    <b>1. :first-child Pseudo-class Selector</b> <br />
+    <ul id="first">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+    <b>2. :last-child Pseudo-class Selector</b> <br />
+    <ul id="last">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+
+    <b>3. :nth-child Pseudo-class Selector</b> <br />
+    <ul id="nthchild">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>four</li>
+      <li>five</li>
+      <li>six</li>
+      <li>seven</li>
+      <li>eight</li>
+    </ul>
+
+  </div>
+</body>
+
+</html>
