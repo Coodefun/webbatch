@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pseudo Class Selectors-1</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: lightgray;
+    }
+
+    .center-container {
+      padding: 20px;
+      background-color: white;
+
+      width: 500px;
+      margin: auto;
+    }
+
+    a:link {
+      color: blueviolet;
+    }
+
+    a:hover
+    {
+        color:red;
+    }
+    a:visited {
+      color: orange;
+    }
+
+    a:active {
+      color: deeppink;
+    }
+
+    a:focus {
+      color: teal;
+    }
+
+    button {
+      margin-right: 30px;
+    }
+
+    
+    button:disabled {
+      opacity: 0.5;
+    }
+
+    button:enabled {
+      /* opacity: 0.5; */
+      background-color: aqua;
+    }
+
+    input[type='text'],
+    input[type='email'] {
+      width: 200px;
+      height: 20px;
+      transition: width 0.35s ease-in-out;
+    }
+
+    input[type='text']:focus {
+      width: 400px;
+      background-color: beige;      
+    }
+  
+
+    input:required {
+      border: 1px solid #ffc107;
+    }
+
+   
+    input[type='radio']:checked+label {
+      font-weight: bold;
+      font-size: 20px;
+      color: red;      
+    }
+
+    p {
+      text-align: center;
+    }
+
+    </style>
+</head>
+
+<body>
+  <div class="center-container">
+    <u>
+      <h2 style="color: red;">Input & link related Pseudo Class Selectors</h2>
+    </u>
+
+
+    <b>1. Anchor Pseudo-classes</b> <br /><br />
+    <a href="#">Hyperlink Link</a><br /><br /><br />
+    <a href="https://www.coodefun.com">Coodefun Website</a>
+    <br>
+    <br>
+
+
+    <b>2. Input Selector :enabled and :disabled </b><br /><br />
+    <button type="submit">Save draft</button>
+    <button type="submit" disabled>Save draft</button><br /><br /><br />
+
+
+    <b>3. Input Selector :focus</b> <br /><br />
+    <label>Enter Name:</label>
+    <input type="text" /><br /><br /><br />
+
+
+    <b>4. Input Selector :required </b><br /><br />
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required />
+    <br /><br /><br />
+
+
+    <b>5. Input Selector :checked</b><br /><br />
+    <label>Select One of following option:</label>
+    <input type="radio" name="radio" id="chk" checked /><label for="chk">ok</label>
+    <input type="radio" name="radio" id="chk" /><label for="chk">no</label>
+    <input type="radio" name="radio" id="chk" /><label for="chk">all</label>
+    <input type="radio" name="radio" id="chk" /><label for="chk">everyone</label><br /><br /><br />        
+
+  </div>
+</body>
+
+</html>
