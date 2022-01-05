@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="finalproject.css">
+    <title>ContactUs</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Images/coodefunlogo.png" alt="Coodefun" class="logo" >
+
+            <nav>
+                <ul>
+                    <li><a href="finalproject.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <a href="" class="demo-btn">BOOK A FREE DEMO SESSION</a>
+
+        </header>
+
+       <!-- Contact Information -->
+<section class="Contact-form">
+    <h1>Get in Touch</h1>
+    <div class="contact-row">
+        <div class="Contact-col">
+            <h2 style="color:blue;">Reach Out</h2>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>🏛️ Address</h3>
+                        <p>siddhartha nagar, ajsj vksj avjsa ajksba askjv <br>ksjj abkba Indore</p>                    
+                    </div>   
+                </div>
+                <br>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>☎ Phone</h3>
+                        <p>+91-97559-22446</p>
+                    </div>       
+                </div>
+                <br>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>✉ Email</h3>
+                        <p>coodefun@gmail.com</p>
+                    </div>       
+                </div>
+        </div>
+
+        <div class="Contact-col">
+            <div class="contactForm">
+            <form action="javascript:sendMail()" method="post">
+                <h2 style="color:yellow;">Get in Touch</h2>
+                <input type="text" name="UserName" id="UserName" required placeholder="Name" />
+                <input type="email" name="UserEmail" id="UserEmail" required placeholder="Email Address"/>
+                <input type="tel" pattern="[1-9]{1}[0-9]{9}" name="phone" id="phone" required placeholder="Enter your 10 digit phone Number" />
+                <input type="text" name="ChildName" id="ChildName" required placeholder="Child Name" />
+                <!-- <textarea required="required" placeholder="Type your Message..."></textarea> -->
+               <h4 style="text-align: left; margin: 10px;color:white;">Kids Grade?</h4>
+                <input type="radio" name="grade" id="class 2-3" value="class 2-3"/> class 2-3
+                <input type="radio" name="grade" id="class 4-6" value="class 4-6"/> class 4-6
+                <input type="radio" name="grade" id="class 7-9" value="class 7-9"/> class 7-9
+                <h4 style="text-align: left; margin: 10px;color:white;">Do you have Laptop/Desktop at home?</h4>
+                <input type="radio" name="laptop" id="yes" value="yes"/> YES  
+                <input type="radio" name="laptop" id="no" value="No"/> NO            
+                <br>           
+                <input type="submit" id="button" class="hero-btn" value="BOOK NOW" onclick="sentEmail()" />   
+            </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <section class="footer">
+            <div class="footer-row">
+        
+                <div class="footer-column">
+                    <h4 style="color:#fbec16;">Site Links</h4>
+                    <div class="site-link">
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Contact Us</a> </li>
+                        </ul>                     
+                    
+                    </div>
+                     
+                    <a href="" class="demo-btn">BOOK NOW</a>  
+        
+                </div>
+        
+                <div class="footer-column">
+                    <h4 style="color:#fbec16;">Reach Out</h4>
+                    <div class="site-link">
+                        <ul>
+                            <li><a href="tel:+919755922446">phone</a></li>
+                            <li><a href="mailto:v2codefun@gmail.com">support@coodefun.com</a></li>
+                            <li><a>siddhartha nagar, ajsj vksj avjsa ajksba askjv <br>ksjj abkba Indore</a> </li>
+                        </ul>        
+                               
+                    </div>
+                    <h4 style="color:#fbec16;">Follow Us On</h4> 
+                    <div class="social-link">
+                        <a href="">Facebook</a>
+                        <a href="">Instagram</a>
+                        <a href="">twitter</a>
+                    </div>
+                   
+                       
+                </div>
+        
+                <div class="footer-column">
+                    <h4 style="color:#fbec16;">Site Links</h4>
+                    <div class="site-link">
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Contact Us</a> </li>
+                        </ul>                     
+                    
+                    </div>
+                               
+                </div>
+                   
+                <div class="footer-column">
+                    <h4 style="color:#fbec16;">Reach Out</h4>
+                    <div class="site-link">
+                        <ul>
+                            <li><a href="tel:+919755922446">phone</a></li>
+                            <li><a href="mailto:v2codefun@gmail.com">support@coodefun.com</a></li>
+                            <li><a>siddhartha nagar, ajsj vksj avjsa ajksba askjv <br>ksjj abkba Indore</a> </li>
+                        </ul>        
+                               
+                    </div>
+                    <h4 style="color:#fbec16;">Follow Us On</h4> 
+                    <div class="social-link">
+                        <a href="">Facebook</a>
+                        <a href="">Instagram</a>
+                        <a href="">twitter</a>
+                    </div>
+                                   
+                </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+                <section class="last-line">
+                    <h4>About Us</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <div class="icons">
+                        <span></span>
+                    </div>
+                </section>
+
+    </div>
+</body>
+</html>
