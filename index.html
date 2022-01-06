@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coodefun Website</title>
+    <style>
+
+        *{
+            padding:0;
+            margin:0;
+        }
+        .container
+        {
+            width:100%;
+            /* padding:15px; */
+        }
+
+        /* stylefor header */
+
+        header{
+            width:100%;
+            height:15vh;
+            background-color:#186Aff;
+            margin:auto;
+            display:flex;
+            align-items: center;
+            /* justify-content:center; */
+            position: fixed;
+            z-index: 2;
+        }
+        .logo
+            {
+                width:80px;
+                margin-left:30px;
+                cursor:pointer;
+            }
+
+        nav {
+                flex:1;    
+                padding-left: 500px;
+            }
+
+            nav ul li
+            {
+                display:inline-block;
+                list-style:none;
+                margin:0px 20px;
+                
+            }
+            nav ul li a 
+            {
+                color:white;
+                text-decoration: none;
+                font-size:20px;
+            }
+
+            nav ul li a::after
+                {
+                    content:'';
+                    width:0%;
+                    height:2px;
+                    background:#fbec16;
+                    display:block;
+                    margin:auto;
+                    transition:0.5s;
+                }
+            nav ul li a:hover::after
+            {
+                content: "";
+                width:100%;
+                height:2px;
+                background:#fbec16;
+                display:block;
+                margin:auto;
+                /* transition:0.5s; */
+            }
+                           
+            .demo-btn
+                {
+                    color:#186Aff;
+                    text-decoration: none;
+                    margin-right: 30px;
+                    border:1px solid white;
+                    border-radius: 10px;
+                    padding:12px 34px;
+                    font-size: 15px;
+                    background-color: yellow;
+                    
+                }
+            
+                .demo-btn:hover 
+                {
+                    background-color: white;
+                    transition: 500ms;
+                }
+
+            /* Css For Heading Section */
+                .heading{
+
+                    width:80%;
+                    height:70vh;
+                    margin:auto;
+                    padding-top:120px;
+                    align-items:center;
+                    text-align:center;
+                } 
+                .heading-row
+                {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .heading-Col1
+                {
+                    width:40%;
+                    padding:auto;
+                }
+                .heading-Col2
+                {
+                    width:60%;
+                    padding:auto;
+                }
+
+                .heading h1{
+                    font-size:36px;
+                    font-weight:600;
+                    margin:5px;
+
+                }
+
+                .heading p 
+                {
+                    color:#777;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight :500;
+                    margin:8px;
+                    padding:10px;
+                }
+
+                      /* CSS for First Section */
+                
+                      .firstSection
+                    {
+                        width:100%;
+                        height:100vh;
+                        background-color: #186Aff;
+                        margin:auto;
+                        text-align:center;
+                    }
+
+                    .firstSection h1{
+                                        font-size:36px;
+                                        font-weight:600;
+                                        padding-top:20px;
+                                        margin-top:20px;
+                                        padding-bottom:30px;
+                                    }
+
+                                    
+                                    .firstSection-row{
+                                    width:100%;
+                                    margin-top:10px;
+                                    margin-bottom: 10px;   
+                                    display:flex;
+                                    justify-content: space-between;
+                                    padding-left:10px;
+                                    padding-right:10px;
+                                }
+
+                                .FirstSection-Column
+                                    {
+                                        flex-basis:33%;
+                                        /* width: 30%; */
+                                        margin:2%;
+                                        text-align:center;
+                                    }
+
+                                .FirstSection-Column:hover{
+                                   
+                                    
+                                    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+                                }
+                                
+                                    .firstSection h3{
+                                        margin:10%;
+                                        text-align: center;
+                                    }
+                                    .FirstSection-Column p{
+                                        padding:0;
+                                        text-align: justify;
+                                    }
+
+
+                /* ---Why Coodefun-- */
+
+.WhyCoodefun{
+    width:100%;
+    height: 80vh;
+    margin:auto;
+    text-align: center;
+    background-color:#fbec16;
+    padding-top: 50px;
+}
+
+.WhyCoodefun-row
+{
+    margin-top: auto;
+    /* padding-top:10px; */
+    display:flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.WhyCoodefun h1{
+    font-size:36px;
+    font-weight:600;
+    word-spacing: 5px;
+   padding-bottom: 15px;
+}
+
+.WhyCoodefun-col{
+    flex-basis: 45%;
+    margin:2%;
+    text-align: center;
+    /* line-height: 20px; */
+}
+
+.WhyCoodefun-col ul li{
+    list-style:none;
+    display: flex;
+    position: relative;
+    padding: 8px 5px;   
+    text-align: left;    
+    }
+   
+.WhyCoodefun-col ul li img{
+        width:5%;
+        height:5%;
+        position: relative;
+        padding:3%;
+    }
+
+    .WhyCoodefun-col img{
+    
+    width:70%;
+    position: relative;
+}
+
+
+/* Styling for Course Section */
+.course{
+width:100%;
+height:120vh;
+margin:auto;
+text-align: center;
+padding-top: 40px;    
+background-color:#fff;
+}
+
+.course-row
+{
+    margin-top: auto;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.course h1{
+        font-size:36px;
+        font-weight:600;
+        word-spacing: 5px;
+   padding-bottom: 15px;
+
+    }
+    
+    .course p{
+    color:#fff;
+    font-size:14px;
+    font-weight:300;
+    line-height:22px;
+    padding:10px;
+    
+    }    
+
+    .course-col
+    {
+        flex-basis: 33%;
+        background:#0b62ff;
+        border-radius:10px;
+        margin:2%;
+        text-align: justify;
+    }
+    h3{
+        text-align: center;
+        font-weight:600;
+        margin:10px 0;
+    }
+    .course-col .demo-btn{
+        margin-left: 35%;
+        margin-bottom: 3%;
+        padding:2%;
+        position: relative;            
+    }
+
+
+      /* --Testimonial */
+ 
+.testimonial{
+    width:100%;
+    height:70vh;
+    margin:auto;
+    text-align: center;
+    padding-top: 40px;
+    background:#fbec16;
+}
+.testimonial h1{
+    font-size:36px;
+    font-weight:700;
+    word-spacing: 5px;
+}
+.testimonial .testimonial-row {
+    margin-top: auto;
+    display:flex;
+    justify-content:space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    color: white;
+    background:#0b62ff;
+    border-radius:10px;   
+    padding: 20px 10px;    
+    text-align: left;
+    cursor:grab;
+    display: flex;
+   
+}
+.testimonial-col img{
+    height:60px;
+    margin-left:5px;
+    margin-right:30px;
+    border-radius: 50%;
+}
+.testimonial-col p{
+    padding:0;
+}
+.testimonial-col h3{
+    margin-top:15px;
+    text-align: left;
+}
+.testimonial-col .star
+{
+    color: red;
+}
+
+/* --Footer-- */
+
+.footer{
+    width:100%;
+    height:50vh;
+    margin:auto;
+    padding-top:40px;
+    background-color: #0b62ff;
+    text-align:left;
+}
+
+.footer-row
+{
+    margin-top: auto;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.footer h4{
+    font-size:19px;
+    font-weight:500;
+    word-spacing: 5px;
+}
+.footer li{
+list-style: none;
+color: white;
+padding-top: 2%;
+}
+
+
+.footer .site-link,.social-link
+{
+    margin-top:10px;
+    margin-bottom:25px;
+}
+.footer li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.footer .demo-btn
+                {
+                    padding:5px;
+                                        
+                }
+
+
+.last-line
+{
+    width:100%;   
+    margin:auto;
+    padding-top:20px;
+    background-color: #fbec16;
+    text-align:center;
+    align-items: center;
+}
+
+     </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Images/coodefunlogo.png" alt="Coodefun" class="logo" >
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="" class="demo-btn">BOOK A FREE DEMO SESSION</a>
+        </header>
+
+        <!-- Heading Section -->
+        <section class="heading">
+            <div class="heading-row">
+                <div class="heading-Col1">
+                    <h1>
+                        <span style="color:Red">Live</span> 
+                        Classes on Coding</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Exercitationem, harum dolorem quos,<span style="color:blue"> tempore dolorum possimus eaque </span>
+                        qui magni eius provident facilis, est earum unde.
+                         Dolore sint porro nisi doloribus est.</p>
+                <a href="" class="demo-btn">BOOK A FREE DEMO SESSION</a>
+
+                </div>
+                <div class="heading-Col2">
+                    <img src="Images/Vector (6).jpg" alt="Coodefun" width="500px;">
+                </div>
+            </div>          
+        </section>
+    
+      
+                  <!-- This is the first section -->
+                  <section class="firstSection">
+                    <h1>Why Should Kids learn Coding ?</h1>
+                    <div class="firstSection-row">
+                        <div class="FirstSection-Column">
+                            <img src="Images/pic-1.png" alt="Creativity">
+                            <h3>Enhance Creativity</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Dolores neque eius iusto, cupiditate ducimus ipsum quas 
+                                aliquam exercitationem
+                                 et laborum temporibus autem sit,
+                                 voluptate maiores possimus molestias asperiores obcaecati praesentium?</p>
+                        </div>
+                        <div class="FirstSection-Column">
+                            <img src="Images/pic-2.png" alt="BrightFuture">
+                            <h3>Bright Future</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Dolores neque eius iusto, cupiditate ducimus ipsum quas 
+                                aliquam exercitationem
+                                 et laborum temporibus autem sit,
+                                 voluptate maiores possimus molestias asperiores obcaecati praesentium?</p>
+                        </div>
+                        <div class="FirstSection-Column">
+                            <img src="Images/pic-3.png" alt="AcademicExcellence">
+                            <h3>Academic Excellence</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Dolores neque eius iusto, cupiditate ducimus ipsum quas 
+                                aliquam exercitationem
+                                 et laborum temporibus autem sit,
+                                 voluptate maiores possimus molestias asperiores obcaecati praesentium?</p>
+                        </div>
+                    </div>
+        
+                </section>
+
+
+                <!-- Why Coodefun -->
+        <section class="WhyCoodefun">
+            <h1>☛ <span style="color:blue;">Why </span>Coodefun ☚ </h1>    
+            <div class="WhyCoodefun-row">
+                <div class="WhyCoodefun-col">
+                    <ul>
+                        <li>
+                            <img src="Images/next-arrow.png" class="icon">
+                            <span class="content"><h2>Very Reasonable price</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </span>                            
+                        </li>                        
+                        <li>
+                            <img src="Images/next-arrow.png" class="icon">
+                            <span class="content"><h2>Very Reasonable price</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </span>
+                        </li>                        
+                        <li>
+                            <img src="Images/next-arrow.png" class="icon">
+                            <span class="content"><h2>Very Reasonable price</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </span>
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="WhyCoodefun-col">
+                    <img src="Images/Vector (7).jpg" >
+                </div>
+            </div>     
+        </section>
+
+
+
+        <!-- Course Section -->
+        <section class="course" id="courses">
+            <h1><span style="color:#0b62ff;">Courses </span> <span style="color:#fe6600">We Offer</span></h1>
+            
+            <div class="course-row">
+                <div class="course-col">
+                    <h3>Basic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem cum magni, natus quidem, aspernatur nesciunt commodi, 
+                        reiciendis tempora quasi pariatur possimus? 
+                        Soluta maiores minima et vel corrupti, sed nam
+                        reiciendis tempora quasi pariatur possimus? 
+                        Soluta maiores minima et vel corrupti, sed nam.</p>
+                        <a href="" class="demo-btn">KNOW MORE</a>
+    
+                </div>
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem cum magni, natus quidem, aspernatur nesciunt commodi, 
+                        reiciendis tempora quasi pariatur possimus? 
+                        reiciendis tempora quasi pariatur possimus? 
+                        Soluta maiores minima et vel corrupti, sed nam
+                        Soluta maiores minima et vel corrupti</p>
+                        <a href="" class="demo-btn">KNOW MORE</a>
+                        
+                </div>
+                <div class="course-col">
+                    <h3>Advance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sequi rem cum magni, natus quidem, aspernatur nesciunt commodi, 
+                        reiciendis tempora quasi pariatur possimus?
+                        reiciendis tempora quasi pariatur possimus? 
+                        Soluta maiores minima et vel corrupti, sed nam
+                         Soluta maiores minima et vel corrupti.</p>    
+                         <a href="" class="demo-btn">KNOW MORE</a>                    
+                </div>    
+            </div>   
+
+
+            <div class="course-row">
+                <div class="course-col">
+                    <h3>Basic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem cum magni, natus quidem, aspernatur nesciunt commodi, 
+                        reiciendis tempora quasi pariatur possimus? 
+                        Soluta maiores minima et vel corrupti, sed nam
+                        reiciendis tempora quasi pariatur possimus? 
+                        Soluta maiores minima et vel corrupti, sed nam.</p>
+                        <a href="" class="demo-btn">KNOW MORE</a>
+    
+                </div>
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem cum magni, natus quidem, aspernatur nesciunt commodi, 
+                        reiciendis tempora quasi pariatur possimus? 
+                        reiciendis tempora quasi pariatur possimus? 
+                        Soluta maiores minima et vel corrupti, sed nam
+                        Soluta maiores minima et vel corrupti</p>
+                        <a href="" class="demo-btn">KNOW MORE</a>
+                        
+                </div>
+                <div class="course-col">
+                    <h3>Advance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sequi rem cum magni, natus quidem, aspernatur nesciunt commodi, 
+                        reiciendis tempora quasi pariatur possimus?
+                        reiciendis tempora quasi pariatur possimus? 
+                        Soluta maiores minima et vel corrupti, sed nam
+                         Soluta maiores minima et vel corrupti.</p>    
+                         <a href="" class="demo-btn">KNOW MORE</a>                    
+                </div>    
+            </div> 
+
+       </section>
+
+
+
+ <!-- ---Testimonial Section--- -->
+
+ <section class="testimonial">
+    <h1><span style="color:#0b62ff;">Testimonial</span></h1>   
+    <p>What Parents say about Coodefun</p>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <img src="Images/Feedback 1 (1).jpeg" alt="butterfly">
+                <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem cum magni, natus quidem, aspernatur nesciunt commodi, 
+                    reiciendis tempora quasi pariatur possimus? 
+                    Soluta maiores minima et vel corrupti, sed nam
+                    Soluta maiores minima et vel corrupti, sed nam.</p>
+                <h3>Butterfly 1</h3>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>   
+                </div>
+
+            </div>
+            <div class="testimonial-col">
+                <img src="Images/Feedback 1 (2).jpeg" alt="butterfly">
+                <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem cum magni, natus quidem, aspernatur nesciunt commodi, 
+                    reiciendis tempora quasi pariatur possimus? Soluta maiores minima et vel corrupti, sed nam.</p>
+                <h3>Butterfly 2</h3>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+                </div>                   
+            </div>           
+        </div>           
+</section>
+
+<!-- ----Footer---- -->
+
+<section class="footer">
+    <div class="footer-row">
+
+        <div class="footer-column">
+            <h4 style="color:#fbec16;">Site Links</h4>
+            <div class="site-link">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Contact Us</a> </li>
+                </ul>                     
+            
+            </div>
+             
+            <a href="" class="demo-btn">BOOK NOW</a>  
+
+        </div>
+
+        <div class="footer-column">
+            <h4 style="color:#fbec16;">Reach Out</h4>
+            <div class="site-link">
+                <ul>
+                    <li><a href="tel:+919755922446">phone</a></li>
+                    <li><a href="mailto:v2codefun@gmail.com">support@coodefun.com</a></li>
+                    <li><a>siddhartha nagar, ajsj vksj avjsa ajksba askjv <br>ksjj abkba Indore</a> </li>
+                </ul>        
+                       
+            </div>
+            <h4 style="color:#fbec16;">Follow Us On</h4> 
+            <div class="social-link">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">twitter</a>
+            </div>
+           
+               
+        </div>
+
+        <div class="footer-column">
+            <h4 style="color:#fbec16;">Site Links</h4>
+            <div class="site-link">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Contact Us</a> </li>
+                </ul>                     
+            
+            </div>
+                       
+        </div>
+           
+        <div class="footer-column">
+            <h4 style="color:#fbec16;">Reach Out</h4>
+            <div class="site-link">
+                <ul>
+                    <li><a href="tel:+919755922446">phone</a></li>
+                    <li><a href="mailto:v2codefun@gmail.com">support@coodefun.com</a></li>
+                    <li><a>siddhartha nagar, ajsj vksj avjsa ajksba askjv <br>ksjj abkba Indore</a> </li>
+                </ul>        
+                       
+            </div>
+            <h4 style="color:#fbec16;">Follow Us On</h4> 
+            <div class="social-link">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">twitter</a>
+            </div>
+                           
+        </div>
+            
+        </div>
+    </div>
+</section>
+
+
+        <section class="last-line">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <div class="icons">
+                <span></span>
+            </div>
+        </section>
+
+    </div>
+    
+</body>
+</html>
