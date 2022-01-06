@@ -211,6 +211,15 @@ nav ul li a
                         text-align:center;
 }
 
+
+.WhyCoding-Column:hover
+{
+    transition-duration: 500ms;
+    transform: scale(85%);
+    box-shadow:5px 4px 20px 10px rgb(190, 205, 50) ;
+}
+
+
 .WhyCoding-Column img{
     width:50%;
 
